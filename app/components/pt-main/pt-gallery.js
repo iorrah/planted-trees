@@ -3,16 +3,31 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   tree: null,
   actions: {
-    like: function(tree) {
-      this.sendAction('like', tree);
+    toggleLike(tree) {
+      if (tree.liked) {
+        this.send('deslike', tree);
+      } else {
+        this.send('like', tree);
+      }
     },
-    deslike: function(tree) {
-      this.sendAction('deslike', tree);
+    like(tree) {
+      var likes = tree.likes + 1;
+      Ember.set(tree, 'likes', likes);
+      Ember.set(tree, 'liked', true);
     },
-    showInModal: function(tree) {
-      this.set('tree', null);
+    deslike(tree) {
+      var likes = tree.likes - 1;
+      Ember.set(tree, 'likes', likes);
+      Ember.set(tree, 'liked', false);
+    },
+    showInModal(tree) {
+      Ember.set(this, 'tree', tree);
       Ember.$('#modal-carousel .item.active').removeClass('active');
-      this.set('tree', tree);
+
+      let selector = '#modal-carousel .carousel-inner #item-'
+                     + tree.id;
+
+      Ember.$(selector).addClass('active');
       Ember.$('#modal-gallery').modal('show');
     }
   }

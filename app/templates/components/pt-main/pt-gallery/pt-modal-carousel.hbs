@@ -1,7 +1,7 @@
 <div id="modal-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
     {{#each trees as |item|}}
-      <div class="item {{if (is-eql item.id tree.id) 'active'}}">
+      <div class="item" id="item-{{item.id}}">
         <img src="{{item.image}}">
         <h3>{{item.name}}</h3>
       </div>

@@ -13,11 +13,11 @@
       </div>
 
       <div class="modal-body">
-        {{pt-main/pt-gallery/pt-modal-carousel trees=trees tree=tree}}
+        {{pt-main/pt-gallery/pt-modal-carousel trees=trees}}
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">
+        <button type="button" class="btn btn-success" {{action 'toggleLike' tree}}>
           Like
           <span class="badge badge-pill badge-light">{{tree.likes}}</span>
         </button>

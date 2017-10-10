@@ -3,12 +3,16 @@
     {{#each trees as |tree|}}
       {{pt-main/pt-gallery/pt-gallery-item
         tree=tree
-        showInModal='showInModal'}}
+        showInModal='showInModal'
+        toggleLike='toggleLike'}}
     {{else}}
       {{pt-main/pt-gallery/pt-empty}}
     {{/each}}
   </div>
 </article>
 
-{{pt-main/pt-gallery/pt-modal trees=trees tree=tree}}
+{{pt-main/pt-gallery/pt-modal
+  trees=trees
+  tree=tree
+  toggleLike='toggleLike'}}
 <div class="clearfix"></div>

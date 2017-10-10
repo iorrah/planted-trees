@@ -1,12 +1,12 @@
 <div class="item-content">
   <img src="assets/images/gallery/placeholder.gif">
-  <img src="{{tree.image}}" class="{{if isHidden 'ghost'}}">
+  <img src="{{tree.image}}" class="{{if tree.is_hidden 'ghost'}}">
   <div class="overlay" {{action 'showInModal' tree}}></div>
 
   <div class="caption top">
     <div class="actions">
       <div class="visibility">
-        {{#if isHidden}}
+        {{#if tree.is_hidden}}
           <button class="btn btn-subtle"
                   {{action 'toggleVisibility'}}>
             <i class="fa fa-eye" aria-hidden="true"></i>
@@ -25,7 +25,7 @@
     <p>{{tree.name}}</p>
 
     <div class="actions">
-      <div class="heart" {{action 'hearted'}}></div>
+      <div class="heart {{if tree.liked 'is-active'}}" {{action 'toggleLike'}}></div>
     </div>
   </div>
 </div>
