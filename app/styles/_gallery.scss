@@ -1,5 +1,6 @@
 .gallery {
   width: 100rem;
+  min-height: 50rem;
 }
 
 .gallery-items {
@@ -65,7 +66,7 @@
 
     .caption {
       display: block;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -76,7 +77,7 @@
       justify-content: space-between;
       flex-wrap: nowrap;
       color: #fff;
-      font-weight: 100;
+      font-weight: 400;
       margin: 0;
       padding: 0 .5rem;
       border: 0;
@@ -88,16 +89,7 @@
       }
 
       .actions {
-        button {
-          background-color: transparent;
-          border: none;
-
-          &:focus { outline: 0; }
-
-          &.active {
-            color: #bbb;
-          }
-        }
+        .btn.btn-subtle.active { color: #bbb; }
       }
     }
   }

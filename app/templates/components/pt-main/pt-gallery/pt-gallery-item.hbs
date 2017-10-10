@@ -6,11 +6,13 @@
     <p>{{tree.name}}</p>
 
     <div class="actions">
-      <button {{action 'like' tree}} class="{{if liked 'active'}}">
+      <button class="btn btn-subtle {{if liked 'active'}}"
+              {{action 'like' tree}}>
         <i class="fa fa-thumbs-up" aria-hidden="true"></i>
       </button>
 
-      <button {{action 'deslike' tree}} class="{{if desliked 'active'}}">
+      <button class="btn btn-subtle {{if desliked 'active'}}"
+              {{action 'deslike' tree}}>
         <i class="fa fa-thumbs-down" aria-hidden="true"></i>
       </button>
     </div>

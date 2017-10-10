@@ -2,6 +2,8 @@
   <div class="gallery-items">
     {{#each trees as |tree|}}
       {{pt-main/pt-gallery/pt-gallery-item tree=tree}}
+    {{else}}
+      {{pt-main/pt-gallery/pt-empty}}
     {{/each}}
   </div>
 </article>
