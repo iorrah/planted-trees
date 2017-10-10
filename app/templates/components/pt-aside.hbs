@@ -1,0 +1,28 @@
+{{#link-to 'index' class='picture-container'}}
+  <img src="assets/images/users/john-doe.jpg" class="picture">
+{{/link-to}}
+
+<div class="details">
+  <h1>John Doe</h1>
+  <h2>{{plantedTrees}} planted trees</h2>
+
+  <ul>
+    <li>
+      {{#link-to 'index'}}Home{{/link-to}}
+    </li>
+
+    <li>
+      {{#link-to 'about'}}About{{/link-to}}
+    </li>
+
+    <li>
+      {{#link-to 'contact'}}Contact{{/link-to}}
+    </li>
+  </ul>
+
+  <div class="btns-conversion">
+    <button type="button" class="btn btn-success">Log in</button>
+    <span class="or">or</span>
+    <button type="button" class="btn btn-success">Register</button>
+  </div>
+</div>

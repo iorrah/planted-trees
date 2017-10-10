@@ -1,0 +1,18 @@
+<div class="item-content">
+  <img src="{{treeImageSrc}}">
+  <div class="overlay"></div>
+
+  <div class="caption">
+    <p>{{tree.name}}</p>
+
+    <div class="actions">
+      <button {{action 'like' tree}} class="{{if liked 'active'}}">
+        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+      </button>
+
+      <button {{action 'deslike' tree}} class="{{if desliked 'active'}}">
+        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div>

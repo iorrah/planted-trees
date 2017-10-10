@@ -1,0 +1,104 @@
+.gallery {
+  width: 100rem;
+}
+
+.gallery-items {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  padding: .2rem;
+
+  a {
+    width: 24.85rem;
+    height: 24.85rem;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: .2rem;
+    border: 0;
+
+    &:hover {
+      .overlay,
+      .caption, {
+        opacity: 1;
+      }
+    }
+
+    .item-content {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    img {
+      position: absolute;
+      display: block;
+      width: auto;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0;
+      margin: 0 auto;
+      border: 0;
+      z-index: 0;
+      transform: scale(1.5);
+    }
+
+    .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.55);
+    }
+
+    .overlay,
+    .caption {
+      opacity: 0;
+      transition: opacity .5s;
+    }
+
+    .caption {
+      display: block;
+      font-size: 1.5rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      color: #fff;
+      font-weight: 100;
+      margin: 0;
+      padding: 0 .5rem;
+      border: 0;
+
+      p {
+        margin: 0 0 .4rem;
+        padding: 0;
+        line-height: normal;
+      }
+
+      .actions {
+        button {
+          background-color: transparent;
+          border: none;
+
+          &:focus { outline: 0; }
+
+          &.active {
+            color: #bbb;
+          }
+        }
+      }
+    }
+  }
+}

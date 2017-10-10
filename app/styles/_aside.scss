@@ -1,0 +1,94 @@
+aside {
+  float: left;
+  width: 22rem;
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+
+  .picture-container {
+    text-decoration: none;
+    display: block;
+    margin: 0 0 .7rem 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+
+    .picture {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .details {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 0 0 .75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 3rem;
+  }
+
+  ul {
+    margin: 0 0 3rem;
+    padding: 0;
+
+    li {
+      list-style: none;
+      font-size: 1.4rem;
+      font-weight: 100;
+      margin: 0 0 .4rem;
+      padding: 0;
+      width: 100%;
+      display: block;
+
+      a {
+        color: inherit;
+        display: block;
+        width: 100%;
+        padding: .4rem;
+        border-radius: .25rem;
+        border: .14rem solid transparent;
+
+        &:hover {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        &:hover,
+        &.active {
+          background-color: #eee;
+          border-color: #ddd;
+        }
+
+        &.active {
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  .btns-conversion {
+    text-align: center;
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #eee;
+    left: 0;
+    bottom: 0;
+    white-space: nowrap;
+    border-top: .14rem solid #ddd;
+
+    span { margin: 0 1rem; }
+  }
+}

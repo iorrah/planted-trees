@@ -1,0 +1,32 @@
+header {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 1.3rem;
+  position: fixed;
+  z-index: 1;
+  width: calc(100% - 22rem);
+  border-bottom: .14rem solid rgba(0, 0, 0, .10);
+
+  & + .offset {
+    content: '';
+    height: 5rem;
+    width: 100%;
+    display: block;
+  }
+
+  .search-input {
+    display: inline-block;
+    width: 20rem;
+    height: 3rem;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
+}

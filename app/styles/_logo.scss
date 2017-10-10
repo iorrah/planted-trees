@@ -1,0 +1,15 @@
+.logo {
+  text-decoration: none;
+
+  font-family: $f-primary;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  i.fa.fa-tree {
+    background: -webkit-linear-gradient(#4caf50, #aed581);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
