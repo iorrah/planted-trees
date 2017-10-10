@@ -1,9 +1,10 @@
 .logo {
   text-decoration: none;
-
   font-family: $f-primary;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:visited {
     text-decoration: none;
   }
 
@@ -11,5 +12,8 @@
     background: -webkit-linear-gradient(#4caf50, #aed581);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: relative;
+    left: -.4rem;
+    transform: scale(1.4);
   }
 }
