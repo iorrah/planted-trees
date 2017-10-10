@@ -6,6 +6,7 @@
     padding: 2rem 2.5rem;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 1;
     border: 0;
 
@@ -38,7 +39,7 @@
 
   .modal-dialog {
     &.modal-lg {
-      width: 81%;
+      width: 82%;
       height: auto;
       max-height: 90%;
       overflow: hidden;

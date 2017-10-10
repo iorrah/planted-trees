@@ -4,57 +4,33 @@ export default Ember.Component.extend({
   tagName: 'a',
   clssNames: ['gallery-item'],
   liked: false,
-  desliked: false,
-  treeImageSrc: Ember.computed('tree.is_img_shown', function() {
-    var src, tree = this.get('tree');
-
-    if (tree.is_img_shown) {
-      src = tree.image;
-    } else {
-      src = 'assets/images/gallery/placeholder.jpg';
-    }
-
-    return src;
-  }),
-  didInsertElement: function() {
-    if (this.get('tree.modal_shown')) {
-      this.send('showInModal', this.get('tree'));
-    }
-  },
+  isHidden: false,
   actions: {
-    like: function(tree) {
-      if (!this.get('liked')) {
-        var likes = tree.likes + 1;
-        Ember.set(tree, 'likes', likes);
+    hearted() {
+      this.$('.heart').toggleClass('is-active');
 
-        if (tree.deslikes) {
-          var deslikes = (tree.deslikes - 1);
-          Ember.set(tree, 'deslikes', deslikes);
-        }
-
-        Ember.set(tree, 'is_img_shown', true);
-
-        this.set('liked', true);
-        this.set('desliked', false);
+      if (this.get('liked')) {
+        this.send('like');
+      } else {
+        this.send('deslike');
       }
     },
-    deslike: function(tree) {
-      if (!this.get('desliked')) {
-        var deslikes = tree.deslikes + 1;
-        Ember.set(tree, 'deslikes', deslikes);
-
-        if (tree.likes) {
-          var likes = (tree.likes - 1);
-          Ember.set(tree, 'likes', likes);
-        }
-
-        Ember.set(tree, 'is_img_shown', false);
-
-        this.set('desliked', true);
-        this.set('liked', false);
-      }
+    like() {
+      let tree = this.get('tree');
+      var likes = tree.likes + 1;
+      Ember.set(tree, 'likes', likes);
+      this.set('liked', true);
     },
-    showInModal: function(tree) {
+    deslike() {
+      let tree = this.get('tree');
+      var likes = tree.likes - 1;
+      Ember.set(tree, 'likes', likes);
+      this.set('liked', false);
+    },
+    toggleVisibility() {
+      this.set('isHidden', !this.get('isHidden'));
+    },
+    showInModal(tree) {
       this.sendAction('showInModal', tree);
     }
   }

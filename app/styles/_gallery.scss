@@ -48,6 +48,9 @@
       border: 0;
       z-index: 0;
       transform: scale(1.5);
+      transition: opacity .5s;
+
+      &.ghost { opacity: 0; }
     }
 
     .overlay {
@@ -63,36 +66,44 @@
     .overlay,
     .caption {
       opacity: 0;
-      transition: opacity .5s;
+      transition: opacity .3s;
     }
 
     .caption {
       display: block;
       font-size: 1.4rem;
       position: absolute;
-      bottom: 0;
       left: 0;
       width: 100%;
-      height: 3rem;
+      height: 4rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: nowrap;
-      color: #fff;
+      color: #aab8c2;
       font-weight: 400;
       margin: 0;
-      padding: 0 .5rem;
+      padding: 0 1.2rem;
       border: 0;
       z-index: 2;
+
+      &.top {
+        top: 0;
+
+        .actions {
+          display: block;
+          width: 100%;
+
+          .visibility { float: right; }
+        }
+      }
+
+      &.bottom { bottom: 0; }
 
       p {
         margin: 0 0 .4rem;
         padding: 0;
         line-height: normal;
-      }
-
-      .actions {
-        .btn.btn-subtle.active { color: #bbb; }
       }
     }
   }

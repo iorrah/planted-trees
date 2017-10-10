@@ -1,0 +1,19 @@
+.heart {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: url('https://cssanimation.rocks/images/posts/steps/heart.png') no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+  position: relative;
+  top: 0;
+  right: -4rem;
+  transform: scale(.4);
+
+  &.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+  }
+}

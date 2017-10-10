@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  tree: null,
   actions: {
     like: function(tree) {
       this.sendAction('like', tree);
@@ -9,8 +10,10 @@ export default Ember.Component.extend({
       this.sendAction('deslike', tree);
     },
     showInModal: function(tree) {
-      Ember.$('#modal-gallery').modal('show');
+      this.set('tree', null);
+      Ember.$('#modal-carousel .item.active').removeClass('active');
       this.set('tree', tree);
+      Ember.$('#modal-gallery').modal('show');
     }
   }
 });
