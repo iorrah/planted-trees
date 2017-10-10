@@ -1,0 +1,51 @@
+#modal-gallery {
+  .modal-header {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 2rem 2.5rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: 0;
+
+    button {
+      opacity: 1;
+
+      span {
+        color: #fff;
+        font-weight: 100;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .modal-footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 2rem 2.5rem;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border: 0;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    position: relative;
+  }
+
+  .modal-dialog {
+    &.modal-lg {
+      width: 81%;
+      height: auto;
+      max-height: 90%;
+      overflow: hidden;
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+}

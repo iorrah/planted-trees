@@ -1,0 +1,43 @@
+#modal-carousel {
+  .carousel-inner {
+    .item {
+      width: 100%;
+      background-color: #000;
+      transition: none;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        max-height: 50.8rem;
+      }
+    }
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    font-size: 5rem;
+    font-weight: 100;
+  }
+}

@@ -1,11 +1,15 @@
 <article class="gallery">
   <div class="gallery-items">
     {{#each trees as |tree|}}
-      {{pt-main/pt-gallery/pt-gallery-item tree=tree}}
+      {{pt-main/pt-gallery/pt-gallery-item
+        tree=tree
+        showInModal='showInModal'}}
     {{else}}
       {{pt-main/pt-gallery/pt-empty}}
     {{/each}}
   </div>
 </article>
+
+{{pt-main/pt-gallery/pt-modal trees=trees tree=tree}}
 
 <div class="clearfix"></div>

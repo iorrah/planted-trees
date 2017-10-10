@@ -16,6 +16,11 @@ export default Ember.Component.extend({
 
     return src;
   }),
+  didInsertElement: function() {
+    if (this.get('tree.modal_shown')) {
+      this.send('showInModal', this.get('tree'));
+    }
+  },
   actions: {
     like: function(tree) {
       if (!this.get('liked')) {
@@ -48,6 +53,9 @@ export default Ember.Component.extend({
         this.set('desliked', true);
         this.set('liked', false);
       }
+    },
+    showInModal: function(tree) {
+      this.sendAction('showInModal', tree);
     }
   }
 });

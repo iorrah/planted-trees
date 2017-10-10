@@ -7,6 +7,10 @@ export default Ember.Component.extend({
     },
     deslike: function(tree) {
       this.sendAction('deslike', tree);
+    },
+    showInModal: function(tree) {
+      Ember.$('#modal-gallery').modal('show');
+      this.set('tree', tree);
     }
   }
 });
