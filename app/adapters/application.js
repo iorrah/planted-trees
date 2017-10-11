@@ -1,12 +1,11 @@
 import DS from 'ember-data';
+import ENV from 'planted-trees/config/environment';
 
 export default DS.RESTAdapter.extend({
-  host: 'https://s3.eu-central-1.amazonaws.com',
-  namespace: 'ecosia-frontend-developer',
-  headers: {
-    'X-Requested-With': 'XMLHttpRequest'
-  },
+  host: ENV.APP.host,
+  namespace: ENV.APP.namespace,
+  headers: ENV.APP.headers,
   buildURL: function() {
-    return this._super(...arguments) + '.json';
+    return this._super(...arguments) + ENV.APP.namespace_extension;
   }
 });
