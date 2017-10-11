@@ -12,8 +12,8 @@ export default Ember.Component.extend({
 
     if (name) {
       trees = trees.filter(function(e) {
-        return (e.name.toLowerCase().indexOf(name) > -1) ||
-               (e.species_name.toLowerCase().indexOf(name) > -1);
+        return (e.get('name').toLowerCase().indexOf(name) > -1) ||
+               (e.get('species_name').toLowerCase().indexOf(name) > -1);
       });
     }
 
