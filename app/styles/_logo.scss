@@ -6,15 +6,14 @@
   &:hover,
   &:focus,
   &:visited {
+    color: #4caf50;
     text-decoration: none;
   }
 
-  i.fa.fa-tree {
-    background: -webkit-linear-gradient(#4caf50, #aed581);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  img {
+    display: inline-block;
     position: relative;
     left: -.4rem;
-    transform: scale(1.4);
+    width: auto;
   }
 }

@@ -9,7 +9,14 @@ footer {
     text-align: left;
     padding: 3rem;
 
-    .logo { font-size: 2rem; }
+    .logo {
+      font-size: 2rem;
+
+      img {
+        height: 3rem;
+        top: -.4rem;
+      }
+    }
   }
 
   .col-share {
