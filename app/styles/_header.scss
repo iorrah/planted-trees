@@ -41,3 +41,28 @@ header {
     }
   }
 }
+
+@media #{$xs-sm} {
+  header {
+    .search-input {
+      width: 11rem;
+    }
+  }
+}
+
+@media #{$xs-md} {
+  header {
+    width: 100%;
+    position: absolute;
+
+    .logo { display: none; }
+  }
+}
+
+@media #{$sm-md} {
+  header {
+    .search-input {
+      width: 20rem;
+    }
+  }
+}

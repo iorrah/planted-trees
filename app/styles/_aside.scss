@@ -2,8 +2,10 @@ aside {
   float: left;
   width: 22rem;
   background-color: #fff;
-  height: 100%;
+  height: 200rem;
   position: fixed;
+  display: block;
+  border-right: 1px solid #eee;
 
   .picture-container {
     text-decoration: none;
@@ -39,7 +41,7 @@ aside {
   }
 
   ul {
-    margin: 0 0 3rem;
+    margin: 0;
     padding: 0;
 
     li {
@@ -91,5 +93,121 @@ aside {
     border-top: .14rem solid #ddd;
 
     span { margin: 0 1rem; }
+  }
+}
+
+@media #{$xs-sm} {
+  aside {
+    .picture-container {
+      width: 20%;
+      padding: 1.4rem 1rem 0;
+
+      .picture {
+        width: 6rem;
+      }
+    }
+
+    .details {
+      padding: 2.7rem 0 0;
+      width: 80%;
+    }
+  }
+}
+
+@media #{$xs-md} {
+  aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    top: 0;
+    display: block;
+    border: 0;
+    border-bottom: .14rem solid #eee;
+
+    .picture-container {
+      float: left;
+
+      .picture {
+        border-radius: 10rem;
+      }
+    }
+
+    .details {
+      display: block;
+      float: left;
+    }
+
+    .naming {
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin: 0 0 .4rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 0 0 2rem;
+    }
+
+    h1,
+    h2 {
+      padding: 0;
+      text-align: center;
+    }
+
+    ul {
+      display: inline-block;
+      float: right;
+      padding: .7rem 0;
+
+      li {
+        margin: 0;
+        display: block;
+        width: 7rem;
+        float: left;
+        text-align: center;
+
+        a {
+          font-size: 1.4rem;
+          padding: .3rem .5rem;
+          border-radius: 0;
+          border: 0;
+
+          &.active {
+            background-color: transparent;
+            font-weight: 900;
+          }
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .btns-conversion {
+      display: none;
+    }
+  }
+}
+
+@media #{$sm-md} {
+  aside {
+    .picture-container {
+      width: 15%;
+      padding: 1rem;
+
+      .picture {
+        width: 7rem;
+      }
+    }
+
+    .details {
+      padding: 3rem 0 0;
+      width: 85%;
+    }
   }
 }

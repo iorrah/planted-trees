@@ -4,3 +4,19 @@
   position: relative;
   left: 22rem;
 }
+
+@media #{$xs-sm} {
+  .content {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media #{$sm-md} {
+  .content {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}

@@ -3,8 +3,10 @@
     {{#each trees as |tree|}}
       {{pt-main/pt-gallery/pt-gallery-item
         tree=tree
+        id=(concat 'gallery-item-' tree.external_id)
         showInModal='showInModal'
-        toggleLike='toggleLike'}}
+        toggleLike='toggleLike'
+        setItemHeight='setItemHeight'}}
     {{else}}
       {{pt-main/pt-gallery/pt-empty}}
     {{/each}}

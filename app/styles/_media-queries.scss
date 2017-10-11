@@ -1,0 +1,14 @@
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$xs-sm: '(min-width: #{$xs}) and (max-width: #{$sm})';
+$xs-md: '(min-width: #{$xs}) and (max-width: #{$md})';
+$xs-lg: '(min-width: #{$xs}) and (max-width: #{$lg})';
+$xs-xl: '(min-width: #{$xs}) and (min-width: #{$xs})';
+
+$sm-md: '(min-width: #{$sm}) and (max-width: #{$md})';
+$sm-lg: '(min-width: #{$sm}) and (max-width: #{$lg})';
+$sm-xl: '(min-width: #{$sm})';
