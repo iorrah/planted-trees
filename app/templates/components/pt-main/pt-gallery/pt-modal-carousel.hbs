@@ -1,7 +1,7 @@
 <div id="modal-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
     {{#each trees as |item|}}
-      <div class="item" id="item-{{item.id}}">
+      <div class="item" id="item-{{item.external_id}}">
         <img src="{{item.image}}">
         <h3>{{item.name}}, <small><i>{{item.species_name}}</i></small></h3>
       </div>

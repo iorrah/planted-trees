@@ -4,19 +4,19 @@ export default Ember.Component.extend({
   tree: null,
   actions: {
     toggleLike(tree) {
-      if (tree.liked) {
+      if (tree.get('liked')) {
         this.send('deslike', tree);
       } else {
         this.send('like', tree);
       }
     },
     like(tree) {
-      var likes = tree.likes + 1;
+      var likes = tree.get('likes') + 1;
       Ember.set(tree, 'likes', likes);
       Ember.set(tree, 'liked', true);
     },
     deslike(tree) {
-      var likes = tree.likes - 1;
+      var likes = tree.get('likes') - 1;
       Ember.set(tree, 'likes', likes);
       Ember.set(tree, 'liked', false);
     },
@@ -25,7 +25,7 @@ export default Ember.Component.extend({
       Ember.$('#modal-carousel .item.active').removeClass('active');
 
       let selector = '#modal-carousel .carousel-inner #item-'
-                     + tree.id;
+                     + tree.get('external_id');
 
       Ember.$(selector).addClass('active');
       Ember.$('#modal-gallery').modal('show');
