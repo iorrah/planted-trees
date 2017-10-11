@@ -24,8 +24,8 @@ export default Ember.Component.extend({
       Ember.set(this, 'tree', tree);
       Ember.$('#modal-carousel .item.active').removeClass('active');
 
-      let selector = '#modal-carousel .carousel-inner #item-'
-                     + tree.get('external_id');
+      let id = tree.get('external_id');
+      let selector = '#modal-carousel .carousel-inner #item-' + id;
 
       Ember.$(selector).addClass('active');
       Ember.$('#modal-gallery').modal('show');
