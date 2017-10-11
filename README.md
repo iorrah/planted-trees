@@ -1,7 +1,6 @@
-# Planted-trees
+# Planted Trees
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+[![Build Status](https://travis-ci.org/iorrah/planted-trees.svg?branch=master)](https://travis-ci.org/iorrah/planted-trees) [![Maintainability](https://api.codeclimate.com/v1/badges/8cad558f8a1b3e97943d/maintainability)](https://codeclimate.com/github/iorrah/planted-trees/maintainability) [![Issue Count](https://codeclimate.com/github/iorrah/planted-trees/badges/issue_count.svg)](https://codeclimate.com/github/iorrah/planted-trees)
 
 ## Prerequisites
 
