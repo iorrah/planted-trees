@@ -22,7 +22,10 @@
   </div>
 
   <div class="caption bottom">
-    <p>{{tree.name}}</p>
+    <p>
+      {{tree.name}}<br />
+      <small>{{tree.species_name}}</small>
+    </p>
 
     <div class="actions">
       <div class="heart {{if tree.liked 'is-active'}}" {{action 'toggleLike'}}></div>

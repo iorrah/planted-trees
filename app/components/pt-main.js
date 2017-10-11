@@ -27,7 +27,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Baobab_Adansonia_digitata.jpg",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 2,
@@ -36,7 +36,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/en/1/16/Red_mangrove-everglades_natl_park.jpg",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 3,
@@ -45,7 +45,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Carpinus_betulus_-_Hunsr%C3%BCck_001.jpg",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 4,
@@ -54,7 +54,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Quercus_cerris.JPG",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 5,
@@ -63,7 +63,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Pinus_syluestriformis_%28Takenouchi%29T.Wang_ex_Cheng.JPG",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 6,
@@ -72,7 +72,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Baobab_Adansonia_digitata.jpg",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 7,
@@ -81,7 +81,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/en/1/16/Red_mangrove-everglades_natl_park.jpg",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 8,
@@ -90,7 +90,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Carpinus_betulus_-_Hunsr%C3%BCck_001.jpg",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 9,
@@ -99,7 +99,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Quercus_cerris.JPG",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 10,
@@ -108,7 +108,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Pinus_syluestriformis_%28Takenouchi%29T.Wang_ex_Cheng.JPG",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 11,
@@ -117,7 +117,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Baobab_Adansonia_digitata.jpg",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 12,
@@ -126,7 +126,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/en/1/16/Red_mangrove-everglades_natl_park.jpg",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 13,
@@ -135,7 +135,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Carpinus_betulus_-_Hunsr%C3%BCck_001.jpg",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 14,
@@ -144,7 +144,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Quercus_cerris.JPG",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     },
     {
       "id": 15,
@@ -153,7 +153,7 @@ export default Ember.Component.extend({
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Pinus_syluestriformis_%28Takenouchi%29T.Wang_ex_Cheng.JPG",
       "likes": 0,
       "liked": false,
-      "is_hidden": false
+      "is_hidden": true
     }
   ]
 });
