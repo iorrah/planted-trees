@@ -18,6 +18,17 @@ header {
     display: block;
   }
 
+  .btn-group { white-space: nowrap; }
+
+  a {
+    &,
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+    &.logo { font-size: 2.2rem; }
+  }
+
   .search-input {
     display: inline-block;
     width: 20rem;

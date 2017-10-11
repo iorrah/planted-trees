@@ -59,7 +59,8 @@ aside {
         border-radius: .25rem;
         border: .14rem solid transparent;
 
-        &:hover {
+        &:hover,
+        &:focus {
           text-decoration: none;
           color: inherit;
         }
