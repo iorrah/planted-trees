@@ -2,23 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tree: null,
-  didInsertElement() {
-    $(window).on('resize', this.reviseItemsHeight);
-  },
-  reviseItemsHeight() {
-    // var items = Ember.$('.gallery-items .item-content');
-
-    // items.each(function() {
-    //   var width = $(this).css('width');
-    //   $(this).css('height', width);
-    // });
-  },
-  setItemHeight(externalId) {
-    // var selector = '.gallery-items #gallery-item-' + externalId;
-    // var item = Ember.$(selector);
-    // var width = item.css('width');
-    // item.css('height', width);
-  },
   actions: {
     toggleLike(tree) {
       if (tree.get('liked')) {
@@ -46,9 +29,6 @@ export default Ember.Component.extend({
 
       Ember.$(selector).addClass('active');
       Ember.$('#modal-gallery').modal('show');
-    },
-    setItemHeight(externalId) {
-      this.setItemHeight(externalId);
     }
   }
 });

@@ -3,9 +3,6 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   tagName: 'a',
   clssNames: ['gallery-item'],
-  didInsertElement() {
-    this.send('setItemHeight', this.get('tree.external_id'));
-  },
   actions: {
     toggleLike() {
       this.sendAction('toggleLike', this.get('tree'));
@@ -15,9 +12,6 @@ export default Ember.Component.extend({
     },
     showInModal(tree) {
       this.sendAction('showInModal', tree);
-    },
-    setItemHeight(externalId) {
-      this.sendAction('setItemHeight', externalId);
     }
   }
 });
