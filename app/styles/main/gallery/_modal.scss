@@ -1,4 +1,18 @@
 #modal-gallery {
+  .modal-content {
+    border-radius: 0;
+    position: relative;
+  }
+
+  .modal-dialog {
+    &.modal-lg {
+      width: 82%;
+      height: auto;
+      max-height: 90%;
+      overflow: hidden;
+    }
+  }
+
   .modal-header {
     position: absolute;
     width: 100%;
@@ -21,6 +35,8 @@
     }
   }
 
+  .modal-body { padding: 0; }
+
   .modal-footer {
     position: absolute;
     width: 100%;
@@ -31,22 +47,18 @@
     z-index: 1;
     border: 0;
   }
+}
 
-  .modal-content {
-    border-radius: 0;
-    position: relative;
-  }
+@media #{$xs-md} {
+  #modal-gallery.modal {
+    padding: 0 15px;
 
-  .modal-dialog {
-    &.modal-lg {
-      width: 82%;
-      height: auto;
-      max-height: 90%;
-      overflow: hidden;
+    .modal-dialog {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+
+      .modal-footer { padding: .7rem; }
     }
-  }
-
-  .modal-body {
-    padding: 0;
   }
 }
