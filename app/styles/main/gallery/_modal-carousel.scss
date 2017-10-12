@@ -1,22 +1,22 @@
 #modal-carousel {
   .carousel-inner {
     .item {
-      width: 100%;
       background-color: #000;
       transition: none;
+      width: 100%;
 
       img {
         display: block;
-        margin: 0 auto;
-        width: auto;
+        margin: 0 auto;x
         max-height: 50.8rem;
+        width: 100%;
       }
 
       h3 {
         position: absolute;
         bottom: 1rem;
         left: 1.7rem;
-        color: white;
+        color: $white;
         font-size: 2rem;
         padding: .6rem 1rem 1rem;
         margin: 0;
@@ -51,7 +51,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     width: 15%;
-    color: #fff;
+    color: $white;
     text-align: center;
     opacity: 1;
     font-size: 5rem;
@@ -65,10 +65,10 @@
       .item {
         h3 {
           font-size: 1rem;
-          padding: .45rem .7rem .65rem;
           border-radius: .15rem;
           bottom: .7rem;
           left: .7rem;
+          padding: .45rem .7rem .65rem;
 
           small { font-size: .7rem; }
         }

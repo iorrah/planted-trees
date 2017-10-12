@@ -1,8 +1,8 @@
 .logo {
-  text-decoration: none;
+  color: $fruit-salad !important;
   font-family: $f-primary;
+  text-decoration: none;
   white-space: nowrap;
-  color: #4caf50 !important;
 
   &:hover,
   &:focus,
@@ -13,8 +13,8 @@
 
   img {
     display: inline-block;
-    position: relative;
     left: -.4rem;
+    position: relative;
     width: auto;
   }
 }

@@ -1,5 +1,5 @@
 header {
-  background-color: #fff;
+  background-color: $white;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -13,9 +13,9 @@ header {
 
   & + .offset {
     content: '';
+    display: block;
     height: 5rem;
     width: 100%;
-    display: block;
   }
 
   .btn-group { white-space: nowrap; }
@@ -39,8 +39,8 @@ header {
 
   .search-input {
     display: inline-block;
-    width: 20rem;
     height: 3rem;
+    width: 20rem;
   }
 
   ul {
@@ -56,8 +56,8 @@ header {
 
 @media #{$xs-md} {
   header {
-    width: 100%;
     position: absolute;
+    width: 100%;
 
     .logo { display: none; }
   }
