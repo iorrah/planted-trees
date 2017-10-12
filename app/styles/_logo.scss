@@ -2,11 +2,12 @@
   text-decoration: none;
   font-family: $f-primary;
   white-space: nowrap;
+  color: #4caf50 !important;
 
   &:hover,
   &:focus,
   &:visited {
-    color: #4caf50;
+    color: inherit;
     text-decoration: none;
   }
 
