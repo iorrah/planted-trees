@@ -1,21 +1,19 @@
-.gallery {
-  width: 100%;
-}
+.gallery { width: 100%; }
 
 .gallery-items {
-  position: relative;
-  width: 100%;
   height: auto;
   padding: .3rem;
+  position: relative;
+  width: 100%;
 
   a {
-    width: calc(33vw - 78px);
-    height: calc(33vw - 78px);
+    border: 0;
     display: block;
     float: left;
+    height: calc(33vw - 78px);
     margin: 0;
     padding: .3rem;
-    border: 0;
+    width: calc(33vw - 78px);
 
     &:hover {
       .overlay,
@@ -78,7 +76,7 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: nowrap;
-      color: #aab8c2;
+      color: $cadet-blue;
       font-weight: 400;
       margin: 0;
       padding: 0 1.2rem;

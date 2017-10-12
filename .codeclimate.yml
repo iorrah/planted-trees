@@ -9,6 +9,8 @@ engines:
     checks:
       VendorPrefix:
         enabled: false
+      NestingDepth:
+        enabled: false
   eslint:
     enabled: true
     config:

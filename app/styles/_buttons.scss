@@ -12,19 +12,19 @@
 
   &.btn-subtle {
     background-color: transparent;
-    border: none;
-    color: #aab8c2;
-    padding: 0;
+    border: 0;
+    box-shadow: none;
+    color: $cadet-blue;
     font-size: inherit;
     margin: 0 .5rem;
-    box-shadow: none;
+    padding: 0;
 
     &,
     &:hover,
     &:focus {
-      outline: 0;
       background-color: transparent;
-      color: #aab8c2;
+      color: $cadet-blue;
+      outline: 0;
     }
   }
 }

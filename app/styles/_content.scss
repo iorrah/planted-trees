@@ -1,22 +1,22 @@
 .content {
   float: left;
-  width: calc(100% - 22rem);
-  position: relative;
   left: 22rem;
+  position: relative;
+  width: calc(100% - 22rem);
 }
 
 @media #{$xs-sm} {
   .content {
-    width: 100%;
     left: 0;
     top: 0;
+    width: 100%;
   }
 }
 
 @media #{$sm-md} {
   .content {
-    width: 100%;
     left: 0;
     top: 0;
+    width: 100%;
   }
 }

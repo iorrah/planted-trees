@@ -1,13 +1,13 @@
 footer {
-  display: block;
   background-color: $gallery;
+  display: block;
   width: 100%;
 
   .cols-container { height: 8rem; }
 
   .col-logo {
-    text-align: left;
     padding: 3rem;
+    text-align: left;
 
     .logo {
       font-size: 2rem;
@@ -20,10 +20,10 @@ footer {
   }
 
   .col-share {
-    text-align: right;
     padding: 3.2rem 3rem 3rem;
+    text-align: right;
 
-    a { margin: 0 .2rem 0; }
+    a { margin: 0 .2rem; }
   }
 
   a {
@@ -37,8 +37,8 @@ footer {
   }
 
   .footer-copyright {
+    background-color: rgba(0, 0, 0, .1);
     padding: 2rem;
     text-align: center;
-    background-color: rgba(0, 0, 0, .10);
   }
 }
