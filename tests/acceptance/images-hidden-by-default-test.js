@@ -1,5 +1,5 @@
 import { test } from 'qunit';
-import moduleForAcceptance from 'you-rockstar/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from 'planted-trees/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | Images Hidden by Default');
 
@@ -11,5 +11,5 @@ test('images-hidden-by-default', function(assert) {
     return $(this).find('.tree').css('opacity') === '0';
   });
 
-  andThen(() => assert.equal(items.length, hiddenImgs.length));
+  andThen(() => assert.equal(items.length, hiddenImgs.length, 'all images are hidden by default'));
 });

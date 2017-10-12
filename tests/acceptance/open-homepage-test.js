@@ -1,5 +1,5 @@
 import { test } from 'qunit';
-import moduleForAcceptance from 'you-rockstar/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from 'planted-trees/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | Open Homepage');
 
