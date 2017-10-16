@@ -15,10 +15,10 @@
       .captions {
         bottom: 1rem;
         left: 1.7rem;
-        right: 1.7rem;
         margin: 0;
         padding: 0;
         position: absolute;
+        right: 1.7rem;
         width: auto;
 
         h3 {
@@ -84,7 +84,7 @@
           h3 {
             border-radius: .15rem;
             font-size: 1rem;
-            padding: .65rem .7rem .65rem;
+            padding: .65rem .7rem;
 
             small { font-size: .7rem; }
           }
