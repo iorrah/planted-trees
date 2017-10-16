@@ -12,20 +12,35 @@
         width: auto;
       }
 
-      h3 {
-        background-color: $black-opacity-0-7;
-        border-radius: .28rem;
+      .captions {
         bottom: 1rem;
-        color: $white;
-        font-size: 2rem;
         left: 1.7rem;
+        right: 1.7rem;
         margin: 0;
-        padding: .6rem 1rem 1rem;
+        padding: 0;
         position: absolute;
+        width: auto;
 
-        small {
-          color: $alto;
-          font-size: 1.2rem;
+        h3 {
+          background-color: $black-opacity-0-7;
+          border-radius: .28rem;
+          color: $white;
+          float: left;
+          font-size: 2rem;
+          margin: 0;
+          padding: .6rem 1rem 1rem;
+
+          small {
+            color: $alto;
+            font-size: 1.2rem;
+          }
+        }
+
+        button {
+          float: left;
+          left: 1.7rem;
+          padding: .95rem 1.7rem;
+          position: relative;
         }
       }
     }
@@ -62,14 +77,22 @@
   .carousel.gallery-modal-carousel {
     .carousel-inner {
       .item {
-        h3 {
-          border-radius: .15rem;
+        .captions {
           bottom: .7rem;
-          font-size: 1rem;
           left: .7rem;
-          padding: .45rem .7rem .65rem;
 
-          small { font-size: .7rem; }
+          h3 {
+            border-radius: .15rem;
+            font-size: 1rem;
+            padding: .65rem .7rem .65rem;
+
+            small { font-size: .7rem; }
+          }
+
+          button {
+            font-size: 1rem;
+            padding: .4rem 1rem .2rem;
+          }
         }
       }
     }

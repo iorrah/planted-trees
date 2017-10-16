@@ -11,13 +11,11 @@ export default Ember.Component.extend({
       }
     },
     like(tree) {
-      var likes = tree.get('likes') + 1;
-      Ember.set(tree, 'likes', likes);
+      tree.incrementProperty('likes');
       Ember.set(tree, 'liked', true);
     },
     deslike(tree) {
-      var likes = tree.get('likes') - 1;
-      Ember.set(tree, 'likes', likes);
+      tree.decrementProperty('likes');
       Ember.set(tree, 'liked', false);
     },
     showInModal(tree) {

@@ -6,7 +6,21 @@
     {{#each trees as |item|}}
       <div class="item" id="item-{{item.external_id}}">
         <img src="{{item.image}}">
-        <h3>{{item.name}}, <small><i>{{item.species_name}}</i></small></h3>
+
+        <div class="captions">
+          <h3>
+            {{item.name}},
+
+            <small>
+              <i>{{item.species_name}}</i>
+            </small>
+          </h3>
+
+          <button type="button" class="btn btn-success" {{action 'toggleLike' item}}>
+            Like
+            <span class="badge badge-pill badge-light">{{item.likes}}</span>
+          </button>
+        </div>
       </div>
     {{/each}}
   </div>
