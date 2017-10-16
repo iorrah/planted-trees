@@ -1,4 +1,4 @@
-#modal-gallery {
+.modal.gallery-modal {
   .modal-content {
     border-radius: 0;
     position: relative;
@@ -6,31 +6,31 @@
 
   .modal-dialog {
     &.modal-lg {
-      width: 82%;
       height: auto;
       max-height: 90%;
       overflow: hidden;
+      width: 82%;
     }
   }
 
   .modal-header {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    padding: 2rem 2.5rem;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
     border: 0;
+    height: auto;
+    left: 0;
+    padding: 2rem 2.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
     button {
       opacity: 1;
 
       span {
-        color: #fff;
-        font-weight: 100;
+        color: $white;
         font-size: 3rem;
+        font-weight: 100;
       }
     }
   }
@@ -38,27 +38,29 @@
   .modal-body { padding: 0; }
 
   .modal-footer {
+    border: 0;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    padding: 2rem 2.5rem;
     position: absolute;
     width: 100%;
-    height: auto;
-    padding: 2rem 2.5rem;
-    bottom: 0;
-    left: 0;
     z-index: 1;
-    border: 0;
   }
 }
 
 @media #{$xs-md} {
-  #modal-gallery.modal {
+  .modal.gallery-modal {
     padding: 0 15px;
 
-    .modal-dialog {
+    .modal-dialog.modal-lg {
       width: 100%;
-      margin-right: 0;
       margin-left: 0;
+      margin-right: 0;
 
-      .modal-footer { padding: .7rem; }
+      .modal-footer {
+        padding: .7rem;
+      }
     }
   }
 }
